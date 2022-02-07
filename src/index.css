@@ -1,0 +1,45 @@
+@import '~antd/dist/antd.css';
+
+/*html { font-size: 80%; }*/
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ant-table-thead > tr > th {
+  background: #cad3df;
+}
+.ant-spin {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background: #014aad;
+}
+
+.ant-spin-lg .ant-spin-dot {
+  font-size: 5rem;
+}
+
+.ant-spin-lg .ant-spin-dot i {
+  width: 2rem;
+  height: 2rem;
+}
+
+.ant-spin-dot-item {
+  background-color: #ff914d;
+}
+
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+  padding: 10px 22px;
+}

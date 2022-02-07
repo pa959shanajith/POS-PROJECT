@@ -1,0 +1,12 @@
+@import "../base/styling";
+
+.pm{
+  &-main-container{
+    background: $card-color !important;
+    //height: 36vh !important;
+    width: 18vw !important;
+  }
+  &-menu{
+    @include button(12vw,6vh,$items-background-color,$card-color,1.5rem);
+  }
+}

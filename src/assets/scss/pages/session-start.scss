@@ -1,0 +1,103 @@
+@import "../base/styling";
+
+.cash {
+  &-hand-container {
+    padding: 40px 80px;
+    background: #1b5bb2;
+    border-radius: 24px;
+    position: relative;
+    margin-right: 60px;
+    width: 410px;
+    .pin-container {
+      .pin-input-field {
+        text-align: right;
+      }
+    }
+  }
+
+  &-hand-text-container {
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Rubik', 'sans-serif';
+  }
+  &-confirm-text {
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Rubik', 'sans-serif';
+  }
+  &-confirm-container {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+  }
+  &-confirm-button-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.currency-container {
+  padding: 2rem 4rem;
+  background: #1b5bb2;
+  border-radius: 24px;
+  position: relative;
+  width: 40vw;
+  margin-right: 20px;
+  .currency-content {
+    .currency-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-gap: 10px;
+      margin-bottom: 10px;
+      .currency-value, .currency-amount, .label {
+        white-space: nowrap;
+        background: #919191;
+        padding: 20px;
+        color: white;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+      }
+      .currency-count {
+        font-size: 1.3rem!important;
+        line-height: 1.6rem;
+        padding: 0 20px;
+      }
+      .currency-amount {
+        background-color: #fa904d;
+      }
+      &.total-row {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+        grid-gap: 22px;
+        .label {
+          margin-right: -10px;
+        }
+      }
+    }
+  }
+}
+
+.currency-input-container {
+  padding: 2rem 4rem;
+  background: #1b5bb2;
+  border-radius: 24px;
+  position: relative;
+  width: 22vw;
+  .close-button-container {
+    padding-top: 10px;
+    .close-button {
+      text-align: center;
+      text-transform: uppercase;
+      background: #fcef2d;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

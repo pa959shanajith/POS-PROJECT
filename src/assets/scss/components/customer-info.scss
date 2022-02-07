@@ -1,0 +1,50 @@
+.customer-info-container {
+  width: 100%;
+
+  .filters {
+    justify-content: space-between;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    .footer-text {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      font-weight: 500;
+    }
+    .fields {
+      display: flex;
+      align-items: center;
+    }
+  }
+  input {
+    width: 12rem;
+    margin: 0 12px;
+    height: 40px;
+    border: none;
+    padding: 0 0 0 12px;
+  }
+  select {
+    height: 40px;
+    background: white;
+    border: none;
+    font-size: 1.1rem;
+  }
+  .button {
+    flex: 1;
+    height: 40px;
+    padding: 0 3rem;
+    line-height: 40px;
+    color: white;
+    background: #526aff;
+    font-size: 1.2rem;
+    box-shadow: 5px 11px 9px #c5c5c5;
+    text-align: center;
+    margin-left: 12px;
+    &.search {
+      background: #FF851A;
+    }
+  }
+}

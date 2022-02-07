@@ -1,0 +1,208 @@
+@import "../base/styling";
+
+.settle {
+    position: relative;
+    &-container {
+        position: absolute;
+        top: 10%;
+        left: 33%;
+        width: 40%;
+        height: 51vh;
+        background-color: #ffffff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:10px;
+
+        &-header{
+            width: 100%;
+            padding: 20px;
+            background-color: #00c2cb;
+            text-align: center;
+            h2{
+                @include fontStyle(2rem, 900, #000);
+            }
+        }
+
+        &-content{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            background-color: #00c2cb;
+            text-align: center;
+            margin-top: 5px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &-cash, &-card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+
+                .cash, .card{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ffffff;
+                    width: 70%;
+                    height: 10rem;
+                    border: 5px solid grey;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    @include fontStyle(2rem, 800, #000);
+                }
+            }
+        }
+        .keypad-container {
+            position: absolute;
+            left: 100%;
+            bottom: 0;
+            height: 100%;
+            width: inherit;
+            background: white;
+            padding: 10px 10px 10px 0;
+            .keypad-background {
+                background: #37c2cb;
+                display: flex;
+                height: 100%;
+                width: 100%;
+                padding: 15px;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .keypad-row {
+                display: flex;
+                & .key-pad-button {
+                    padding: 32px 0;
+                    flex: 1;
+                    text-align: center;
+                    font-family: $font-family-sans;
+                    font-size: 22px;
+                    font-weight: 300;
+                    margin: 0 10px 10px 0;
+                    background: #919191;
+                    color: white;
+                    transition: all 0.2s;
+                    cursor: pointer;
+                    &:last-child {
+                        margin: 0 0 10px 0;
+                    }
+                    &:hover {
+                        background: #ff914d;
+                        color: black;
+                    }
+                    &.disabled-key-pad {
+                        background-color: grey;
+                        &:hover {
+                            background: darkgrey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.settle-container {
+    .settle-bill-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        &-content {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            background-color: #00c2cb;
+            text-align: center;
+            margin-top: 5px;
+
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            &-bill, &-recieved{
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    @include fontStyle(3rem, 800, #000);
+                }
+
+                .amt{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 15vw;
+                    height: 10vh;
+                    background-color: #ffffff;
+                    border: 5px solid grey;
+                    border-radius: 20px;
+                    font-size: 5rem!important;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+            &-bill {
+                .amt {
+                    background-color: grey;
+                    border-color: #E6E200;
+                    color: #ffffff;
+                }
+            }
+            .submit-btn{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+                width: 8vw;
+                height: 8vh;
+                background-color: blue;
+                border: 5px solid #E6E200;
+                border-radius: 20px;
+                cursor: pointer;
+                span{
+                    @include fontStyle(2rem, 800, #fff);
+                }
+            }
+        }
+    }
+}
+
+.balance-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .remaining-balance {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 20vh;
+        background-color: #ffffff;
+        border: 10px solid grey;
+        border-radius: 20px;
+
+        span {
+            @include fontStyle(7rem, 800, #000);
+        }
+    }
+}

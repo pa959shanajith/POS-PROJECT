@@ -1,0 +1,116 @@
+@import "../base/styling";
+
+.signin {
+  min-height: 100vh;
+  width: 100vw;
+  background: #004aad;
+  padding: 48px;
+  font-family: $font-family-sans;
+  &-pos-logo-container {
+    width: 128px;
+    height: 128px;
+    background: white;
+    margin: auto;
+    img {
+      width: 100%;
+    }
+  }
+  &-content-container{
+    width: 40vw;
+    background-color: white;
+    padding: 4rem;
+    border-radius: 10px;
+  }
+  &-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+  }
+  &-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    span{
+      @include fontStyle(2rem,600,#262626);
+    }
+  }
+  &-email{
+    &-container{
+      margin: 1rem 0;
+    }
+    &-header{
+      padding: 0.25rem 0.5rem;
+      span{
+        @include fontStyle(1rem,500,#262626);
+      }
+    }
+  }
+  &-password{
+    &-container{
+      margin: 0.5rem 0;
+    }
+    &-header{
+      padding: 0.25rem 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      &-primary{
+        @include fontStyle(1rem,500,#262626);
+      }
+      &-secondary{
+        @include fontStyle(1rem,500,#2766cc);
+      }
+    }
+  }
+  &-button{
+    border-radius: 4.5px;
+    height: 3.75rem;
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    background-color: cornflowerblue;
+    border: none;
+    box-shadow: 5px 11px 9px #c5c5c5;
+    span{
+      @include fontStyle(1.3rem,700, #fff);
+      text-transform: uppercase;
+    }
+  }
+
+  &-not-registered {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  &-register-button {
+    margin-top: 0;
+    cursor: pointer;
+  }
+}
+
+input {
+  font-size: 18px !important;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  & span {
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 18px;
+  }
+  &>div {
+    flex: 1;
+  }
+  &>span {
+    flex: 2;
+  }
+  &>.input{
+    flex: 3;
+  }
+}

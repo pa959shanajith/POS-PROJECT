@@ -1,0 +1,71 @@
+.ant-table-footer {
+  background-color: #cad3df;
+  .table-footer-cont {
+    display: flex;
+    justify-content: space-between;
+    .order-count-container {
+      display: flex;
+      gap: 1.2rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    .total-price-value {
+      font-weight: 700;
+      margin-left: 2.5rem;
+    }
+  }
+}
+
+.sales-report-container {
+  width: 100%;
+}
+
+.sales-report-component {
+  .filters {
+    gap: 2rem;
+  }
+  .date-range {
+    gap: 0.4rem;
+    min-width: 0;
+  }
+  input.input {
+    width: 12rem;
+    margin: 0;
+    height: 40px;
+    border: none;
+    padding: 0 0 0 12px;
+  }
+  select {
+    height: 40px;
+    background: white;
+    border: none;
+    font-size: 1.1rem;
+  }
+  .button {
+    height: 40px;
+    padding: 0 2rem;
+    line-height: 40px;
+    color: white;
+    background: #526aff;
+    font-size: 1.2rem;
+    box-shadow: 5px 11px 9px #c5c5c5;
+    text-align: center;
+    &.search {
+      background: #FF851A;
+    }
+  }
+  .filters-main-content {
+    overflow: scroll;
+    display: flex;
+    gap: 0.4rem;
+    min-width: 0;
+    &::-webkit-scrollbar {
+      width: 0;  /* Remove scrollbar space */
+      height: 0;
+      background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+  }
+}

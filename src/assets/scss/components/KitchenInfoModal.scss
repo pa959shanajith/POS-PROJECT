@@ -1,0 +1,66 @@
+@import "../base/styling";
+
+.kitchen-info-main{
+    .kitchen-info-container{
+        width: 35vw;
+        height: 40vh;
+
+        .kitchen-header{
+            padding: 5px;
+            text-align: center;
+            background-color: #3EB1EE;
+            h2{
+                @include fontStyle(2rem, 500, #000);
+                margin: 0;
+            }
+        }
+
+        .kitchen-content{
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #3EB1EE;
+
+            h2{
+                padding-top: 10px;
+                padding-left: 30px;
+                @include fontStyle(2rem, 500, #000);
+            }
+
+            .kitchen-text-input{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+                font-family: 'Rubik', serif;
+                padding: 20px;
+                width: 100%;
+                height: 20vh;
+                textarea {
+                    padding: 20px;
+                    width: 100%;
+                    height: 100%;
+                    resize: none;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .button-container{
+                margin: auto;
+                padding: 10px;
+
+                @include fontStyle(1rem, 900, #fff);
+            }
+
+            .button{
+                border: none;
+                background-color: dimgrey;
+                padding: 20px 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "src/assets/scss/base/styling";
+
+.create-role-container {
+
+  & .access-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 12px 0;
+  padding-left: 44px;
+  & span {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+  }
+}

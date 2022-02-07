@@ -1,0 +1,63 @@
+@import "../base/styling";
+
+.menu-list {
+  &-container {
+    padding: 2rem 4rem;
+    background: #1b5bb2;
+    border-radius: 24px;
+    position: relative;
+    margin-right: 4rem;
+    width: 24rem;
+  }
+  #column3 {
+    width: 480px
+  }
+  &-item {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    padding: 1.3rem 2rem;
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+    background: #8c52ff;
+    color: #fff;
+    text-align: center;
+    transition: all 0.2s;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      background: #00c2cb;
+      color: white;
+    }
+    &.orange {
+      background-color: #fa904d;
+      &:hover {
+        background: #e57c4b;
+        color: white;
+      }
+    }
+    &.green {
+      background-color: #7ed957;
+      color: black;
+      &:hover {
+        background: #9ce37d;
+      }
+    }
+    &-selected {
+      background: #fff;
+      color: black;
+      //position: relative;
+      &:before {
+        content: "";
+        width: 60px;
+        height: 50px;
+        right: -58px;
+        position: absolute;
+        background: #1b5bb2;
+        clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+        transform: translate(0, -12px);
+      }
+    }
+  }
+}

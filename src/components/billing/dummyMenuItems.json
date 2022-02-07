@@ -1,0 +1,45 @@
+{
+  "menuItems": [
+    {
+      "id": "ab1",
+      "name": "Expresso",
+      "price": 20
+    },{
+      "id": "ab2",
+      "name": "Long Black",
+      "price": 34
+    },{
+      "id": "ab3",
+      "name": "Latte H",
+      "price": 123
+    },{
+      "id": "ab4",
+      "name": "Black Tea",
+      "price": 200
+    },{
+      "id": "ab5",
+      "name": "Mocha",
+      "price": 170
+    },{
+      "id": "ab6",
+      "name": "Flat White",
+      "price": 100
+    },{
+      "id": "ab7",
+      "name": "Turkish White",
+      "price": 130
+    },{
+      "id": "ab8",
+      "name": "big Beer",
+      "price": 200
+    },{
+      "id": "ab9",
+      "name": "Big Thin Crust Pizza",
+      "price": 200
+    },{
+      "id": "ab10",
+      "name": "Pasta",
+      "price": 250
+    }
+  ]
+}
